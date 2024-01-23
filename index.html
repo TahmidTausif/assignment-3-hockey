@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1b2985148f.js" crossorigin="anonymous"></script>
+    <title>Hockey's</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'hockey-primary': '#FF4240',
+                        'hockey-font': '#131318',
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+            .font - family{
+            font - family: 'Manrope', sans - serif;
+        }
+    </script>
+</head>
+
+<body class="font-family">
+    <header class="w-[81.25%] mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="#home" class="hover:text-hockey-primary">Home</a></li>
+                        <li><a href="#about" class="hover:text-hockey-primary">About</a></li>
+                        <li><a href="#pages" class="hover:text-hockey-primary">Pages</a></li>
+                        <li><a href="#blog" class="hover:text-hockey-primary">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-hockey-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl gap-0">Hockey<span class="text-hockey-primary">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#home" class="hover:text-hockey-primary">Home</a></li>
+                    <li><a href="#about" class="hover:text-hockey-primary">About</a></li>
+                    <li><a href="#pages" class="hover:text-hockey-primary">Pages</a></li>
+                    <li><a href="#blog" class="hover:text-hockey-primary">Blog</a></li>
+                    <li><a href="#contact" class="hover:text-hockey-primary">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-3">
+                <button class="btn btn-ghost btn-circle text-gray-400  hover:text-white">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <a class="btn bg-hockey-primary text-white hover:text-hockey-primary hover:bg-transparent hover:border-hockey-primary">Get Ticket</a>
+            </div>
+        </div>
+    </header>
+    <main class="w-[81.25%] mx-auto">
+        <section>
+            <div class="carousel w-full mt-12">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="images/1.png" class="w-full" />
+                  <div class="absolute flex transform translate-y-1/2 left-7 bottom-10 gap-4">
+                    <a href="#slide4" class="btn btn-circle bg-hockey-font text-white">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-hockey-font text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="images/2.png" class="w-full" />
+                  <div class="absolute flex transform translate-y-1/2 left-7 bottom-10 gap-4">
+                    <a href="#slide1" class="btn btn-circle bg-hockey-font text-white">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-hockey-font text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="images/3.png" class="w-full" />
+                  <div class="absolute flex transform translate-y-1/2 left-7 bottom-10 gap-4">
+                    <a href="#slide2" class="btn btn-circle bg-hockey-font text-white">❮</a> 
+                    <a href="#slide4" class="btn btn-circle bg-hockey-font text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="images/4.png" class="w-full" />
+                  <div class="absolute flex transform translate-y-1/2 left-7 bottom-10 gap-4">
+                    <a href="#slide3" class="btn btn-circle bg-hockey-font text-white">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-hockey-font text-white">❯</a>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+</body>
+
+</html>
